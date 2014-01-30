@@ -148,8 +148,8 @@ sub {
 }
 
 ul, ol {
-  margin: 1em 0;
-  padding: 0 0 0 40px;
+  margin: 0;
+  padding: 0;
 }
 
 dd {
@@ -304,4 +304,758 @@ td {
 
 body {
   font-family: "Helvetica", Arial, sans-serif;
+  width: 1024px;
+  height: 768px;
+  background: #F0F0F0;
+}
+
+.purple {
+  background: #e13d96;
+}
+
+.grey {
+  background: #565656;
+}
+
+.info-box {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  border-radius: 4px;
+  padding: 0.5em;
+  color: #FFF;
+  font-family: Arial;
+  font-weight: 100;
+}
+.info-box:nth-child(1) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: TL;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: TL;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: TL;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: TL;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.info-box:nth-child(2) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: TR;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: TR;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: TR;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: TR;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.info-box:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: BL;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: BL;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: BL;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: BL;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.info-box:nth-child(4) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: BR;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: BR;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: BR;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: BR;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.info-box:nth-child(5) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: L;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: L;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: L;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: L;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+.info-box:nth-child(6) {
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-name: R;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 5s;
+  -moz-animation-name: R;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 1s;
+  -o-animation-duration: 5s;
+  -o-animation-name: R;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 1s;
+  animation-duration: 5s;
+  animation-name: R;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+}
+
+@-webkit-keyframes TL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-moz-keyframes TL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-o-keyframes TL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@keyframes TL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-webkit-keyframes TR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 80%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-moz-keyframes TR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 80%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-o-keyframes TR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 80%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@keyframes TR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 80%;
+    top: 5%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-webkit-keyframes BL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 55%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-moz-keyframes BL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 55%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-o-keyframes BL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 55%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@keyframes BL {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 55%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+  }
+}
+
+@-webkit-keyframes BR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 85%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-moz-keyframes BR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 85%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-o-keyframes BR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 85%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@keyframes BR {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 85%;
+    top: 90%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    filter: blur(2px);
+  }
+}
+
+@-webkit-keyframes L {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 45%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-moz-keyframes L {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 45%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-o-keyframes L {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 45%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes L {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 45%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-webkit-keyframes R {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 25%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-moz-keyframes R {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 25%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-o-keyframes R {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 25%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes R {
+  0% {
+    left: 46%;
+    top: 46%;
+    -webkit-transform: scale3d(0.5, 0.5, 0.25);
+    -moz-transform: scale3d(0.5, 0.5, 0.25);
+    -ms-transform: scale3d(0.5, 0.5, 0.25);
+    -o-transform: scale3d(0.5, 0.5, 0.25);
+    transform: scale3d(0.5, 0.5, 0.25);
+  }
+
+  100% {
+    left: 25%;
+    top: 46%;
+    -webkit-transform: scale3d(1.5, 1.5, 1.25);
+    -moz-transform: scale3d(1.5, 1.5, 1.25);
+    -ms-transform: scale3d(1.5, 1.5, 1.25);
+    -o-transform: scale3d(1.5, 1.5, 1.25);
+    transform: scale3d(1.5, 1.5, 1.25);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    filter: blur(0px);
+  }
 }
